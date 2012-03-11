@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block page_title %}{{ post.title }}{% endblock page_title %}
+
+{% block content %}
+    <a href="index.html">back</a>
+    <div id="content">
+        {{ content }}
+    </div>
+{% endblock %}

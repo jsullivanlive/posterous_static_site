@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>LOLs: {{ page_title }}</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font: 13px/1.5 Helvetica,Arial,'Liberation Sans',FreeSans,sans-serif;
+                font-family: "HelveticaNeueW01-65Medi",helvetica,sans-serif;
+                font-weight: 500;
+                color: #A5A9AC;
+            }
+            .postlist li span {
+                color: black;
+                padding-right: 10;
+            }
+            a {
+                text-decoration: none;
+                color: #A5A9AC;
+            }
+            li {
+                list-style: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>LOLs</h1>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
