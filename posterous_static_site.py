@@ -92,6 +92,8 @@ def create_post_page(post):
     f.close()
 
 def process():
+    if not os.path.exists(SITE_FOLDER):
+        os.mkdir(SITE_FOLDER)
     sites = get_site_list()
     for site in sites:
         index_data = []
